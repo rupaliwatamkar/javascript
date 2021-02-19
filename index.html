@@ -4,55 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="todo.js"></script>
 
 <body>
-    <div>
-        <div class="title">Calculator</div>
-        <table border="1">
-            <tr>
-                <td colspan="5">
-                    <input type="text" id="result" />
-                </td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="disp('1')" /></td>
-                <td><input type="button" value="2" onclick="disp('2')" /></td>
-                <td><input type="button" value="3" onclick="disp('3')" /></td>
-                <td><input type="button" value="." onclick="disp('.')" /></td>
-                <td><input type="button" value="~" onclick="disp('~')" /></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4" onclick="disp('4')" /></td>
-                <td><input type="button" value="5" onclick="disp('5')" /></td>
-                <td><input type="button" value="6" onclick="disp('6')" /></td>
-                <td><input type="button" value="+" onclick="disp('+')" /></td>
-                <td><input type="button" value="-" onclick="disp('-')" /></td>
-
-            </tr>
-
-            <tr>
-                <td><input type="button" value="7" onclick="disp('7')" /></td>
-                <td><input type="button" value="8" onclick="disp('8')" /></td>
-                <td><input type="button" value="9" onclick="disp('9')" /></td>
-                <td><input type="button" value="*" onclick="disp('*')" /></td>
-                <td><input type="button" value="/" onclick="disp('/')" /></td>
-
-            </tr>
-            <tr>
-                <td><input type="button" value="0" onclick="disp('0')" /></td>
-                <td> <input type="button" value="c" onclick="clr()" /> </td>
-                <td><input type="button" value="<" onclick="backspace()" /></td>
-                <td><input type="button" value="%" onclick="disp('%')" /></td>
-                <td><input type="button" value="=" onclick="solve()" /></td>
-            </tr>
-
-        </table>
+    <div id="myDiv" class="header">
+        <h2 style="margin:5px">MY TODO LIST</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">ADD</span>
     </div>
+
+    <ul id="myUl">
+        <li>Morning Walk</li>
+        <li class="checked">Pay Bills</li>
+        <li>Meet Friends</li>
+        <li>Read a Book</li>
+        <li>shopping</li>
+        <li>Organize Room</li>
+    </ul>
 </body>
 
 </html>
